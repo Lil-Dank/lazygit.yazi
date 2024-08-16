@@ -1,21 +1,6 @@
-local get_cwd = ya.sync(function()
-    local tab, path = cx.active, ""
-    if tab.current.hovered then
-        path = tostring(tab.current.hovered.url)
-    end
-    local pattern1 = "^(.+)//"
-    local pattern2 = "^(.+)\\"
-    if string.match(path, pattern1) == nil then
-        return string.match(path, pattern2)
-    else
-        return string.match(path, pattern1)
-    end
-end)
-
 return {
     entry = function()
-        local cwd = get_cwd()
-        local output = Command("git"):arg("status"):cwd(cwd):stderr(Command.PIPED):output()
+        local output = Command("git"):arg("status"):stderr(Command.PIPED):output()
         if output.stderr ~= "" then
             ya.notify({
                 title = "lazygit",
