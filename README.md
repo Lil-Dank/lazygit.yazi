@@ -5,7 +5,9 @@ Make sure [lazygit](https://github.com/jesseduffield/lazygit) is installed and i
 ## Installation
 
 ### Using `ya pack`
-`ya pack -a Lil-Dank/lazygit`
+```
+ya pack -a Lil-Dank/lazygit
+```
 
 ### Manual
 **Linux/macOS**
