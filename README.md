@@ -19,10 +19,11 @@ git clone https://github.com/Lil-Dank/lazygit.yazi.git ~/.config/yazi/plugins/la
 git clone https://github.com/Lil-Dank/lazygit.yazi.git %AppData%\yazi\config\plugins\lazygit.yazi
 ```
 ## Configuration
-**keymap.toml**
+add this to your **keymap.toml** file
 ```toml
 [[manager.prepend_keymap]]
 on   = [ "g", "i" ]
 run  = "plugin lazygit"
 desc = "run lazygit"
 ```
+you can customize the keybinding however you like. Please refer to the [keymap.toml](https://yazi-rs.github.io/docs/configuration/keymap) documentation
