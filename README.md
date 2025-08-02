@@ -21,7 +21,7 @@ git clone https://github.com/Lil-Dank/lazygit.yazi.git %AppData%\yazi\config\plu
 ## Configuration
 add this to your **keymap.toml** file
 ```toml
-[[manager.prepend_keymap]]
+[[mgr.prepend_keymap]]
 on   = [ "g", "i" ]
 run  = "plugin lazygit"
 desc = "run lazygit"
