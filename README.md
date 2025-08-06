@@ -4,9 +4,9 @@ Plugin for [Yazi](https://github.com/sxyazi/yazi) to manage git repos with [lazy
 Make sure [lazygit](https://github.com/jesseduffield/lazygit) is installed and in your `PATH`.
 ## Installation
 
-### Using `ya pack`
+### Using `ya pkg`
 ```
-ya pack -a Lil-Dank/lazygit
+ ya pkg add Lil-Dank/lazygit
 ```
 
 ### Manual
