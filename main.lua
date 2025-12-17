@@ -9,7 +9,7 @@ return {
                 timeout = 5,
             })
         else
-            permit = ya.hide()
+            permit = ui.hide()
             local output, err_code = Command("lazygit"):stderr(Command.PIPED):output()
             if err_code ~= nil then
                 ya.notify({
