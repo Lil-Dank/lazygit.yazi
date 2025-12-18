@@ -10,7 +10,10 @@ return {
             })
         else
             permit = ui.hide()
-            local output, err_code = Command("lazygit"):stderr(Command.PIPED):output()
+            local output, err_code = Command("lazygit"):stdin(Command.INHERIT):stdout(Command.INHERIT):stderr(Command.PIPED):spawn()
+            if output and not err_code then
+                output, err_code = output:wait_with_output()
+            end
             if err_code ~= nil then
                 ya.notify({
                     title = "Failed to run lazygit command",
