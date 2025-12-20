@@ -27,3 +27,5 @@ run  = "plugin lazygit"
 desc = "run lazygit"
 ```
 you can customize the keybinding however you like. Please refer to the [keymap.toml](https://yazi-rs.github.io/docs/configuration/keymap) documentation
+## Disclaimer
+**THIS PLUGIN IS FOR THE STABLE RELEASE OF YAZI, DON'T PROPOSE ANY CHANGES BASED ON PRE-RELEASES OF YAZI**
