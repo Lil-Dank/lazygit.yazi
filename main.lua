@@ -9,16 +9,11 @@ return {
                 timeout = 5,
             })
         else
-<<<<<<< HEAD
-            permit = ui.hide()
+            permit = ya.hide()
             local output, err_code = Command("lazygit"):stdin(Command.INHERIT):stdout(Command.INHERIT):stderr(Command.PIPED):spawn()
             if output and not err_code then
                 output, err_code = output:wait_with_output()
             end
-=======
-            permit = ya.hide()
-            local output, err_code = Command("lazygit"):stderr(Command.PIPED):output()
->>>>>>> parent of 430a96e (fix: replace deprecated ya.hide() with ui.hide())
             if err_code ~= nil then
                 ya.notify({
                     title = "Failed to run lazygit command",
